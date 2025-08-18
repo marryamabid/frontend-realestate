@@ -14,7 +14,7 @@ export default function About() {
       </p>
       <p className="mb-4 text-slate-700">
         Our mission is to make real estate simple, transparent, and rewarding.
-        Whether you’re purchasing your first home, upgrading to a new space, or
+        Whether you are purchasing your first home, upgrading to a new space, or
         finding the perfect rental, we provide expert guidance, personalized
         service, and a deep understanding of the local market to help you make
         the best decisions.
