@@ -8,7 +8,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import Oauth from "../Components/Oauth";
 
-export default function SignIp() {
+export default function SignIn() {
   const [formData, setFormData] = useState({});
 
   const navigate = useNavigate(); // Hook to programmatically navigate
