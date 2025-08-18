@@ -1,8 +1,6 @@
 import { useState } from "react";
-import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import Oauth from "../Components/Oauth";
-import { set } from "mongoose";
 
 export default function SignUp() {
   const [formData, setFormData] = useState({});
