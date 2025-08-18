@@ -86,7 +86,7 @@ export default function Search() {
         const response = await fetch(
           `${
             import.meta.env.VITE_BACKEND_API_URL
-          }listing/search?${searchQuery}`,
+          }/listing/search?${searchQuery}`,
           {
             method: "GET",
             headers: {
@@ -123,7 +123,7 @@ export default function Search() {
     const searchQuery = urlParams.toString();
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_API_URL}listing/search?${searchQuery}`,
+        `${import.meta.env.VITE_BACKEND_API_URL}/listing/search?${searchQuery}`,
         {
           method: "GET",
           headers: {

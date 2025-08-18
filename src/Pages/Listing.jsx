@@ -34,7 +34,7 @@ export default function Listing() {
       const res = await fetch(
         `${
           import.meta.env.VITE_BACKEND_API_URL
-        }/api/listing/getListing/${listingId}`
+        }/listing/getListing/${listingId}`
       );
       const data = await res.json();
       if (data.message === false) {

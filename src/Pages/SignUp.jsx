@@ -18,7 +18,7 @@ export default function SignUp() {
     setError(null); // Reset error state
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_API_URL}auth/signup`,
+        `${import.meta.env.VITE_BACKEND_API_URL}/auth/signup`,
         {
           method: "POST",
           headers: {

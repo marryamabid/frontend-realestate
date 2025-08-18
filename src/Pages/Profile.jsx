@@ -75,7 +75,9 @@ export default function Profile() {
       dispatch(updateUserStart());
 
       const res = await fetch(
-        `${import.meta.env.VITE_BACKEND_API_URL}user/update/${currentUser._id}`,
+        `${import.meta.env.VITE_BACKEND_API_URL}/user/update/${
+          currentUser._id
+        }`,
         {
           method: "POST",
           headers: {
@@ -111,7 +113,9 @@ export default function Profile() {
     try {
       deleteUserStart();
       const res = await fetch(
-        `${import.meta.env.VITE_BACKEND_API_URL}user/delete/${currentUser._id}`,
+        `${import.meta.env.VITE_BACKEND_API_URL}/user/delete/${
+          currentUser._id
+        }`,
         {
           method: "DELETE",
           credentials: "include", // include cookies for auth
@@ -132,7 +136,7 @@ export default function Profile() {
     try {
       dispatch(signoutUserStart());
       const res = await fetch(
-        `${import.meta.env.VITE_BACKEND_API_URL}auth/signout`
+        `${import.meta.env.VITE_BACKEND_API_URL}/auth/signout`
       );
       const data = await res.json();
       if (data.success === false) {
@@ -149,7 +153,7 @@ export default function Profile() {
     try {
       setShowListingError(false);
       const res = await fetch(
-        `${import.meta.env.VITE_BACKEND_API_URL}user/listings/${
+        `${import.meta.env.VITE_BACKEND_API_URL}/user/listings/${
           currentUser._id
         }`
       );
@@ -170,7 +174,7 @@ export default function Profile() {
   const deleteUserListing = async (listingId) => {
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_BACKEND_API_URL}listing/delete/${listingId}`,
+        `${import.meta.env.VITE_BACKEND_API_URL}/listing/delete/${listingId}`,
         {
           method: "DELETE",
         }
