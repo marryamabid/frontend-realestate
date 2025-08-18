@@ -155,7 +155,14 @@ export default function Profile() {
       const res = await fetch(
         `${import.meta.env.VITE_BACKEND_API_URL}/user/listings/${
           currentUser._id
-        }`
+        }`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+        }
       );
       const data = await res.json();
       if (data.success === false) {

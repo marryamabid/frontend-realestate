@@ -142,7 +142,12 @@ export default function EditListing() {
       const res = await fetch(
         `${
           import.meta.env.VITE_BACKEND_API_URL
-        }/listing/getListing/${listingId}`
+        }/listing/getListing/${listingId}`,
+        {
+          method: "GET",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+        }
       );
       const data = await res.json();
       if (data.message === false) {
