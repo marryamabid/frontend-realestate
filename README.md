@@ -1,12 +1,68 @@
-# React + Vite
+# HomeLinker – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **frontend** of HomeLinker is built with **React (Vite)**.  
+It provides a modern, responsive user interface for browsing, listing, and contacting property owners.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔑 User Authentication (Email/Password + Google OAuth)
+- 🔒 Private Routes (only logged-in users can access)
+- 🏘️ Create, update, and delete property listings
+- 📨 Contact property owners via email
+- 📱 Responsive UI with Tailwind CSS
+- ⚡ Fast build using Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React + Vite**
+- **React Router DOM**
+- **Tailwind CSS**
+- **Google Auth**
+- **Fetch API** for backend calls
+
+---
+
+## ⚙️ Setup & Installation
+
+1. Clone the repository:
+   ````
+   git clone https://github.com/marryamabid/frontend-realestate.git
+   cd HomeLinker-frontend```
+   2.Install dependencies:
+   ````
+
+```
+npm install
+```
+
+3. Run the app:
+
+```
+npm run dev
+```
+
+4.Build for production:
+
+```
+npm run build
+```
+
+Run development server:
+
+```
+npm run dev
+```
+
+📡 Deployment
+
+````
+https://classy-creponne-f6e3ff.netlify.app/```
+
+Backend is deployed on Vercel.
+````
+
+https://backend-realestate-ubz6.vercel.app```
