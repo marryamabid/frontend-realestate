@@ -17,7 +17,12 @@ export default function Home() {
         const res = await fetch(
           `${
             import.meta.env.VITE_BACKEND_API_URL
-          }/listing/search?offer=true&limit=3`
+          }/listing/search?offer=true&limit=3`,
+          {
+            method: "GET",
+            headers: { "Content-Type": "application/json" },
+            redentials: "include",
+          }
         );
         const data = await res.json();
         setOfferListings(data);
@@ -31,7 +36,12 @@ export default function Home() {
         const res = await fetch(
           `${
             import.meta.env.VITE_BACKEND_API_URL
-          }/listing/search?type=rent&limit=3`
+          }/listing/search?type=rent&limit=3`,
+          {
+            method: "GET",
+            headers: { "Content-Type": "application/json" },
+            redentials: "include",
+          }
         );
         const data = await res.json();
         setRentListings(data);
@@ -46,7 +56,12 @@ export default function Home() {
         const res = await fetch(
           `${
             import.meta.env.VITE_BACKEND_API_URL
-          }/listing/search?type=sale&limit=3`
+          }/listing/search?type=sale&limit=3`,
+          {
+            method: "GET",
+            headers: { "Content-Type": "application/json" },
+            redentials: "include",
+          }
         );
         const data = await res.json();
         setSaleListings(data);

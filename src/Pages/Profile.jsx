@@ -184,6 +184,7 @@ export default function Profile() {
         `${import.meta.env.VITE_BACKEND_API_URL}/listing/delete/${listingId}`,
         {
           method: "DELETE",
+          credentials: "include", // include cookies for auth
         }
       );
       const data = await res.json();
