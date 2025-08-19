@@ -51,7 +51,7 @@ npm run dev
 npm run build
 ```
 
-Run development server:
+5.Run development server:
 
 ```
 npm run dev
@@ -59,10 +59,8 @@ npm run dev
 
 📡 Deployment
 
-````
-https://classy-creponne-f6e3ff.netlify.app/```
+https://classy-creponne-f6e3ff.netlify.app/
 
 Backend is deployed on Vercel.
-````
 
-https://backend-realestate-ubz6.vercel.app```
+https://backend-realestate-ubz6.vercel.app
