@@ -15,13 +15,11 @@ export default function Home() {
     const fetchOfferListings = async () => {
       try {
         const res = await fetch(
-          `${
-            import.meta.env.VITE_BACKEND_API_URL
-          }/listing/search?offer=true&limit=3`,
+          "https://backend-realestate-ubz6.vercel.app/api/listing/search?offer=true&limit=3",
           {
             method: "GET",
             headers: { "Content-Type": "application/json" },
-            redentials: "include",
+            credentials: "include",
           }
         );
         const data = await res.json();
@@ -34,13 +32,11 @@ export default function Home() {
     const fetchRentListings = async () => {
       try {
         const res = await fetch(
-          `${
-            import.meta.env.VITE_BACKEND_API_URL
-          }/listing/search?type=rent&limit=3`,
+          "https://backend-realestate-ubz6.vercel.app/api/listing/search?type=rent&limit=3",
           {
             method: "GET",
             headers: { "Content-Type": "application/json" },
-            redentials: "include",
+            credentials: "include",
           }
         );
         const data = await res.json();
@@ -54,13 +50,11 @@ export default function Home() {
     const fetchSaleListings = async () => {
       try {
         const res = await fetch(
-          `${
-            import.meta.env.VITE_BACKEND_API_URL
-          }/listing/search?type=sale&limit=3`,
+          "https://backend-realestate-ubz6.vercel.app/api/listing/search?type=sale&limit=3",
           {
             method: "GET",
             headers: { "Content-Type": "application/json" },
-            redentials: "include",
+            credentials: "include",
           }
         );
         const data = await res.json();
