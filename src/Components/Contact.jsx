@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 export default function Contact({ listing }) {
   const [landlord, setLandlord] = useState(null);
@@ -47,14 +46,14 @@ export default function Contact({ listing }) {
             placeholder="Enter your message here..."
             className="w-full border p-3 rounded-lg"
           ></textarea>
-
-          <Link
-            to={`mailto:${landlord.email}?subject=${encodeURIComponent(
+          <a
+            href={`mailto:${landlord.email}?subject=${encodeURIComponent(
               `Regarding ${listing.name}`
             )}&body=${encodeURIComponent(message)}`}
+            className="bg-slate-700 text-white text-center p-3 rounded-lg uppercase hover:opacity-95"
           >
             Send Message
-          </Link>
+          </a>
         </div>
       )}
     </>
