@@ -14,10 +14,9 @@ export default function About() {
       </p>
       <p className="mb-4 text-slate-700">
         Our mission is to make real estate simple, transparent, and rewarding.
-        Whether you are purchasing your first home, upgrading to a new space, or
-        finding the perfect rental, we provide expert guidance, personalized
-        service, and a deep understanding of the local market to help you make
-        the best decisions.
+        Whether you are purchasing your first home, or finding the perfect
+        rental, we provide expert guidance, personalized service, and a deep
+        understanding of the local market to help you make the best decisions.
       </p>
       <p className="mb-4 text-slate-700">
         At HomeLinker, our team of skilled agents brings years of experience and
